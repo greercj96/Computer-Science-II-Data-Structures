@@ -1,0 +1,23 @@
+﻿  GradesProgram.cpp
+C:\Users\greer\source\repos\GradesProgram\GradesProgram\Grades.cpp(10,15): error C2011: 'Student': 'class' type redefinition
+C:\Users\greer\source\repos\GradesProgram\GradesProgram\Grades.h(3): message : see declaration of 'Student'
+C:\Users\greer\source\repos\GradesProgram\GradesProgram\Grades.cpp(38,29): error C2027: use of undefined type 'Student'
+C:\Users\greer\source\repos\GradesProgram\GradesProgram\Grades.h(3): message : see declaration of 'Student'
+C:\Users\greer\source\repos\GradesProgram\GradesProgram\Grades.cpp(41,7): error C2027: use of undefined type 'Student'
+C:\Users\greer\source\repos\GradesProgram\GradesProgram\Grades.h(3): message : see declaration of 'Student'
+C:\Users\greer\source\repos\GradesProgram\GradesProgram\Grades.cpp(45,26): error C2027: use of undefined type 'Student'
+C:\Users\greer\source\repos\GradesProgram\GradesProgram\Grades.h(3): message : see declaration of 'Student'
+C:\Users\greer\source\repos\GradesProgram\GradesProgram\Grades.cpp(50,19): error C2027: use of undefined type 'Student'
+C:\Users\greer\source\repos\GradesProgram\GradesProgram\Grades.h(3): message : see declaration of 'Student'
+C:\Users\greer\source\repos\GradesProgram\GradesProgram\GradesProgram.cpp(7,12): error C2084: function 'int main(void)' already has a body
+C:\Users\greer\source\repos\GradesProgram\GradesProgram\Grades.cpp(35): message : see previous definition of 'main'
+C:\Users\greer\source\repos\GradesProgram\GradesProgram\GradesProgram.cpp(8,13): error C2601: 'main': local function definitions are illegal
+C:\Users\greer\source\repos\GradesProgram\GradesProgram\GradesProgram.cpp(7): message : this line contains a '{' which has not yet been matched
+C:\Users\greer\source\repos\GradesProgram\GradesProgram\GradesProgram.cpp(11,1): error C2027: use of undefined type 'Student'
+C:\Users\greer\source\repos\GradesProgram\GradesProgram\Grades.h(3): message : see declaration of 'Student'
+C:\Users\greer\source\repos\GradesProgram\GradesProgram\GradesProgram.cpp(14,1): error C2027: use of undefined type 'Student'
+C:\Users\greer\source\repos\GradesProgram\GradesProgram\Grades.h(3): message : see declaration of 'Student'
+C:\Users\greer\source\repos\GradesProgram\GradesProgram\GradesProgram.cpp(18,1): error C2027: use of undefined type 'Student'
+C:\Users\greer\source\repos\GradesProgram\GradesProgram\Grades.h(3): message : see declaration of 'Student'
+C:\Users\greer\source\repos\GradesProgram\GradesProgram\GradesProgram.cpp(23,1): error C2027: use of undefined type 'Student'
+C:\Users\greer\source\repos\GradesProgram\GradesProgram\Grades.h(3): message : see declaration of 'Student'
