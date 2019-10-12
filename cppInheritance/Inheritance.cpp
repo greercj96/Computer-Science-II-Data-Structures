@@ -1,57 +1,50 @@
 #include <iostream>
+#include "Inheritance.h"
 using namespace std;
 
 
-class Vehicle{
-private:
-	double weight;
-	int numTires;
-	int numPassengers;
-	string model;
+Vehicle::Vehicle(
+	double weight,
+	int numTires,
+	int numPassengers,
+	string model
+){}
 
-public:
-	void setModel(string model) {
+
+
+void Vehicle :: setModel(string model) {
 		model = model;
 		cout << "This is a "<< model << endl;
 	}
 
 
-	void setnumTires(int numTires) {
+void Vehicle :: setnumTires(int numTires) {
 		cin >> numTires;
 		cout << "There are " << numTires << " tires" << endl;
 	}
 
-	void setnumPassengers(int numPassengers) {
+void Vehicle ::	setnumPassengers(int numPassengers) {
 		numPassengers = numPassengers;
 		cout << "You have " << numPassengers << " passengers" << endl;
 	}
-};
-
-class Car : public Vehicle {
-
-private:
-	bool radio = true;
-	int numDoors;
-
-public:
-	Car() {
-		numDoors = 4;
-		cout << "This is a car ";
-		cout << "This vehicle has a radio " << endl;
-	}
 
 
-};
 
 
-class Bike : public Vehicle {
-private:
-	string helmetSize;
+Car::Car() {
+	cout << "This is a car " << endl;
+	cout << "This vehicle has a radio " << endl;
+}
 
-public:
-	Bike() {
 
-	}
+Bike :: Bike () {
+	cout << "This is a bike, so there is no radio" << endl;
+}
+	
 
-};
 
+void Bike::setHelmetSize(string helmetSize)
+{
+	helmetSize = helmetSize;
+	cout << "Your helmet size is " << helmetSize << endl;
+}
