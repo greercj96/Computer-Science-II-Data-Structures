@@ -4,24 +4,19 @@ using namespace std;
 
 class Vehicle {
 private:
-	double weight;
-	int numTires;
-	int numPassengers;
-	string model;
+	Vehicle(double weight, int numTires, int numPassengers, string model);
 
 public:
-	void setModel(string model) {
-		
-	}
+	
+	void setModel(string model);
 
 
-	void setnumTires(int numTires) {
-		
-	}
+	void setnumTires(int numTires);
 
-	void setnumPassengers(int numPassengers) {
-		
-	}
+	void setnumPassengers(int numPassengers);
+
+	Vehicle() {};
+	
 };
 
 class Car : public Vehicle {
@@ -31,13 +26,8 @@ private:
 	int numDoors;
 
 public:
-	Car() {
-		numDoors = 4;
-		cout << "This is a car ";
-		cout << "This vehicle has a radio " << endl;
-
-	}
-
+	Car();
+	
 
 };
 
@@ -47,8 +37,10 @@ private:
 	string helmetSize;
 
 public:
-	Bike() {
-		
-	}
+	Bike();
+
+
+	void setHelmetSize(string helmetSize);
+	
 
 };
