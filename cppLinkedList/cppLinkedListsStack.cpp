@@ -34,6 +34,7 @@ class linkedList {
 	}
 
 	void push(int data) {
+		cout << "\n Adding " << data;
 		node* newNode = new node();
 		newNode->data = data;
 		newNode->next = top;
@@ -45,9 +46,11 @@ class linkedList {
 			cout << "Stack is Empty";
 		}
 		else {
+		cout <<"\n Removing " << top->data;
 			node* temp = top;
 			top = top->next;
 			delete(temp);
+		
 		}
 	}
 		void insertNode(int n) {
@@ -91,9 +94,9 @@ class linkedList {
 			node* temp = new node;
 			temp = top;
 			while (temp != NULL) {
-				cout << "\n";
-				cout << temp->data<< "\n";
-				cout << "|\n";
+				cout << "    \n";
+				cout << "    "<< temp->data<< "    \n";
+				cout << "    |\n";
 				temp = temp->next;
 			}
 			cout << "End of list";
@@ -111,10 +114,11 @@ int main() {
 	a.push(1);
 	a.push(2);
 	a.push(3);
+	a.push(4);
+	a.printStack();
 	a.pop();
 	a.printStack();
 	a.pop();
-	a.push(3);
 	a.printStack();
 	
 	return 0;
