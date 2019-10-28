@@ -108,16 +108,25 @@ public:
 
 //code for graph
 
+// Jackson- 0
+// Oakland- 1 
+// Mariposed- 2 
+// Merced- 3 
+// Redwood City -4 
+// San Jose- 5
+// Santa Cruz- 6
+// Sonora - 7
+	
 
-int vertArr[20][20]; //the adjacency matrix initially 0
+int vertArr[16][16]; //the adjacency matrix initially 0
 int count = 0;
 
-void add_edge(string u, string v ) { //function to add edge into the matrix
+void add_edge(int u, int v ) { //function to add edge into the matrix
 	vertArr[u][v] = 1;
 	vertArr[v][u] = 1;
 }
 
-void isConnected(string u, string v) {
+void isConnected(int u, int v) {
 	if (vertArr[u][v] != 0) {
 		cout << "There is a connection between " << u << " and " << v << endl;
 	}
@@ -126,21 +135,20 @@ void isConnected(string u, string v) {
 	}
 }
 
-int main(string argc, char* argv[]) {
+int main(int argc, char* argv[]) {
 	int v = 8; //there are 8 vertices in the graph
-	add_edge("Jackson", "Oakland");
-	add_edge("Jackson", "Mariposed");
-	add_edge("Jackson", "Sonora");
-	add_edge("Mariposed", "Sonora");
-	add_edge("Mariposed", "Merced");
-	add_edge("Mariposed", "San Jose");
-	add_edge("Merced", "San Jose");
-	add_edge("Oakland", "San Jose");
-	add_edge("Redwood City", "San Jose");
-	add_edge("Redwood City", "Santa Cruz");
-	add_edge("Santa Cruz", "San Jose");
-	
-	isConnected("Jackson", "Mariposed")
+	add_edge(0,1);
+	add_edge(0, 2);
+	add_edge(0, 7);
+	add_edge(2, 7);
+	add_edge(2, 3);
+	add_edge(2, 5);
+	add_edge(3, 5);
+	add_edge(1, 5);
+	add_edge(4, 5);
+	add_edge(4, 6);
+	add_edge(5, 6);
+
 
 	linkedList cityKeys[8];
 
